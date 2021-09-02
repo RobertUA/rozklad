@@ -14,13 +14,12 @@ function Change(w, d, p, th)
 function Load()
 {
     let nw=0, nd=0, np=0;
-    //let now = new Date();
-    let now = new Date('10-16-2021')
+    let now = new Date();
+    //let now = new Date('10-16-2021')
     let hm = now.getHours()*60+now.getMinutes;
 
     //nw
-    let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('30-08-2021').getTime()) / (1000 * 3600 * 24));
-    //let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('08-30-2021').getTime()) / (1000 * 3600 * 24));
+    let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('08-30-2021').getTime()) / (1000 * 3600 * 24));
     //nd
     nd = now.getDay()-2;
     let cnd = nd;
