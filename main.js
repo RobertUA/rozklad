@@ -19,8 +19,8 @@ function Load()
     let hm = now.getHours()*60+now.getMinutes;
 
     //nw
-    //let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('30-08-2021').getTime()) / (1000 * 3600 * 24));
-    let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('08-30-2021').getTime()) / (1000 * 3600 * 24));
+    let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('30-08-2021').getTime()) / (1000 * 3600 * 24));
+    //let daysLag = Math.ceil(Math.abs(now.getTime() - new Date('08-30-2021').getTime()) / (1000 * 3600 * 24));
     //nd
     nd = now.getDay()-2;
     let cnd = nd;
