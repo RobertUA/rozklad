@@ -1,13 +1,23 @@
 button
 {
+    background-color: whitesmoke;
     width: 80pt;
     height: 20pt;
+}
+.curday
+{
+    background-color: rgb(195, 230, 238);
+}
+.current
+{
+    font-weight: 900;
+    background-color: yellow;
 }
 .w
 {
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: 50pt auto auto auto auto auto auto;
+    grid-template-rows: 25pt auto auto auto auto auto auto;
     grid-template-columns: 50pt auto auto auto auto auto;
 }
 .w div
