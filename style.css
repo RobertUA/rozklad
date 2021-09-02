@@ -1,0 +1,23 @@
+button
+{
+    width: 80pt;
+    height: 20pt;
+}
+.w
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50pt auto auto auto auto auto auto;
+    grid-template-columns: 50pt auto auto auto auto auto;
+}
+.w div
+{
+    text-align: center;
+    border: 1pt solid black;
+}
+footer
+{
+    font-weight: 900;
+    margin-top: 10pt;
+    text-align: center;
+}
