@@ -8,8 +8,8 @@ function Change(w, d, p, th)
     w--;
     d--;
     p--;
-    //console.log(""+w+d+p, th.textContent);
-    localStorage.setItem(""+w+d+p, th.textContent);
+    //console.log(""+w+d+p, th.value);
+    localStorage.setItem(""+w+d+p, th.value);
 }
 function Load()
 {
@@ -97,7 +97,7 @@ function Load()
                 if(w==nw && d==nd && p>=np && s[w*5*6+d*6+p].textContent.length>0) 
                 {
                     np=666;
-                    s[w*5*6+d*6+p].className+= " current";
+                    s[w*5*6+d*6+p].id="current";
                 }
                 if(d==cnd && w==cnw) s[w*5*6+d*6+p].className+=" curday";
             }
@@ -113,7 +113,7 @@ function CanChange()
         canchange = false;
         for(let i = 0;i<s.length;i++)
         {
-            s[i].setAttribute("contenteditable", false);
+            s[i].setAttribute("disabled", true);
         }
     }
     else 
@@ -123,7 +123,7 @@ function CanChange()
         canchange = true;
         for(let i = 0;i<s.length;i++)
         {
-            s[i].setAttribute("contenteditable", true);
+            s[i].removeAttribute("disabled");
         }
     }
 }

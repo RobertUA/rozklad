@@ -8,7 +8,7 @@ button
 {
     background-color: rgb(195, 230, 238);
 }
-.current
+#current
 {
     font-weight: 900;
     background-color: yellow;
@@ -24,6 +24,15 @@ button
 {
     text-align: center;
     border: 1pt solid black;
+}
+.w textarea
+{
+    size:  auto;
+    width: auto;
+    /* min-height: 50pt; */
+    text-align: center;
+    border: 1pt solid black;
+    resize: none;
 }
 footer
 {
